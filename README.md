@@ -45,3 +45,120 @@
     <a href="https://vuejs.org/" target="_blank" rel="noreferrer"><img src="https://profilinator.rishav.dev/skills-assets/vuejs-original-wordmark.svg" alt="Vue.js" width="50" height="50"/> </a>
     <a href="https://www.blender.org/" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Vue.js" width="50" height="50"/> </a>
 </p>
+
+
+<details>
+<summary>Workspace Düzeni ve İsimlendirme Rehberi</summary>
+<br>
+
+Bu belge, projelerini ve dosyalarını tutarlı, profesyonel ve anlaşılır bir biçimde organize etmeni sağlayacak rehberdir.
+
+---
+<br>
+<details>
+<summary>📁 Klasör Yapısı</summary>
+<br>
+
+```
+workspace/
+├── 01-company_jobs/             # Şirketlerdeki profesyonel projeler
+│   ├── companyA-clientX-api
+│   ├── companyB-dashboard
+│   └── companyC-automation
+│
+├── 02-projects/                # Kendi projelerin
+│   ├── frontend/
+│   │   ├── react-weather-app
+│   │   ├── vue-task-manager
+│   │   └── html-css-demos
+│   ├── backend/
+│   │   ├── django-user-api
+│   │   └── express-note-app
+│   ├── fullstack/
+│   │   ├── fs-react-flask-chat
+│   │   └── fs-vue-node-crud
+│   ├── automation/
+│   │   ├── python-script-telegram
+│   │   └── bash-project-init
+│   ├── mobile/
+│   │   ├── swift-app-demo
+│   │   └── swift-ui-components
+│   ├── bash/
+│   │   ├── bash-utils
+│   │   └── shell-scripting-samples
+│   └── ai-ml/
+│       ├── huggingface-labeling
+│       ├── image-classification
+│       └── fine-tuning-projects
+│
+├── 03-experiments/             # Deneme, test ve yarım kalan projeler
+│   ├── experimental/
+│   │   ├── ai-voice-experiment
+│   │   └── unfinished-api-test
+│   └── quick-tests/
+│       ├── single-html-demo
+│       └── simple-python-script
+│
+├── 04-docs-resources/          # Dokümanlar ve referans materyaller
+│   ├── cheatsheets/
+│   ├── pdfs/
+│   └── markdown-notes/
+│
+├── 05-tmp/                     # Geçici çalışma alanı
+```
+</details>
+
+<br>
+
+<details>
+<summary>📝 Proje İsimlendirme Yapısı</summary>
+<br>
+
+```
+<tur>-<teknoloji>-<proje-aciklama>-<opsiyonel-kisa-tanim>
+```
+
+- `tur`: İş türünü belirtir.
+  - `fs` - Full Stack
+  - `fe` - Frontend
+  - `be` - Backend
+  - `auto` - Automation
+  - `exp` - Experimental
+  - `job` - Şirket veya müşteri bazlı proje
+
+- `teknoloji`: Kullanılan teknoloji veya framework.
+  - `react`, `vue`, `django`, `express`, `flask`, `node`, `py`, `bash`, `swift`, `ai`
+
+- `proje-aciklama`: Projeyi net tanımlayan kısa ifade.
+
+- `opsiyonel-kisa-tanim`: Projenin türü veya durumuyla ilgili ekstra kısaltma.
+  - `v1`, `test`, `demo`, `prod`, `wip` (work in progress)
+
+### İsimlendirme Örnekleri
+  - **Frontend Proje**: `fe-react-weather-v1`
+  - **Backend API**: `be-flask-user-auth`
+  - **Full Stack Proje**: `fs-vue-node-blog`
+  - **Şirket Projesi**: `job-companyA-crm-dashboard`
+  - **Deneme Projesi**: `exp-python-ai-chat`
+  - **Yarım kalan proje**: `exp-react-game-wip`
+  - **Yapay Zeka Projesi**: `ai-huggingface-image-classifier`
+</details>
+
+<br>
+
+<details>
+<summary>📌 Önemli Notlar</summary>
+<br>
+
+```
+- Projelerde **uzun isimler yerine**, anlaşılır kısaltmalar kullan.
+- İşveren veya arkadaşlara yapılan işler için kısa ve net kodlar kullanabilirsin:
+  - `fX-telegram-bot`
+  - `cY-web-scraper`
+```
+</details>
+<br>
+
+GitHub'da bir Markdown dosyası oluşturarak projelerinin dizin yapısını ve içeriğini paylaşmak oldukça yararlı olacaktır. Böylece hem kendin için referans oluşturur, hem de başkaları projelerini kolayca inceleyebilir ve örnek alabilir.
+
+</details>
