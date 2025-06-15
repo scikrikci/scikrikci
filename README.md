@@ -46,9 +46,10 @@
     <a href="https://www.blender.org/" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Vue.js" width="50" height="50"/> </a>
 </p>
 
+<br>
 
 <details>
-<summary>Workspace Düzeni ve İsimlendirme Rehberi</summary>
+<summary><h3>📁 Workspace Düzeni ve İsimlendirme Rehberi</h3></summary>
 <br>
 
 Bu belge, projelerini ve dosyalarını tutarlı, profesyonel ve anlaşılır bir biçimde organize etmeni sağlayacak rehberdir.
