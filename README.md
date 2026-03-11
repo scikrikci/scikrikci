@@ -23,32 +23,32 @@
 ---
 
 ## ⚡ 2026 — Focus
-- **Prompt Engineering**: tool-calling, RAG, agent tasarımı, prompt kontratları, evaluation (eval), guardrails
-- **System Architecture**: event-driven tasarım, kuyruk/messaging, caching, ölçeklenebilir servisler
-- **Cross-platform**: **Tauri + Rust** (performans/footprint) + gerektiğinde **Electron** (hızlı prototip / plugin ekosistemi), **Swift** (native macOS), **.NET MAUI** (Windows)
+- **Prompt Engineering**: tool-calling, RAG, agent design, prompt contracts, evaluation (eval), guardrails
+- **System Architecture**: event-driven design, queuing/messaging, caching, scalable services.
+- **Cross-platform**: **Tauri + Rust** (performance/footprint) + **Electron** (rapid prototyping/plugin ecosystem) when needed, **Swift** (native macOS), **.NET MAUI** (Windows)
 
-> Hedef: “demo değil”, **production mantığıyla çalışan** sistemler.
+> The goal: systems that operate with a **production mindset**, not a **demo**.
 
 ---
 
 ## 🧠 Prompt Engineering
-- **Prompt Contract**: giriş/çıkış şeması, JSON schema, tool parametre disiplini  
-- **RAG Kalite**: chunking, kaynak güvenilirliği, hallucination azaltma, cite/trace yaklaşımı  
-- **Agent Tasarımı**: plan→execute döngüsü, fail-safe fallback, retry/backoff, rate-limit farkındalığı  
-- **Eval Mindset**: golden set + regresyon testleri, prompt versiyonlama, ölçülebilir kalite
+- **Prompt Contract**: input/output schema, JSON schema, tool parameter discipline
+- **RAG Quality**: chunking, source reliability, hallucination reduction, cite/trace approach
+- **Agent Design**: plan→execute cycle, fail-safe fallback, retry/backoff, rate-limit awareness.
+- **Eval Mindset**: golden set + regression tests, prompt versioning, measurable quality.
 
-**Ayrışma noktası:** “prompt yazmak” değil, **promptu ürünleştirmek** (ölçülebilir + sürdürülebilir).
+**The key difference:** Not “writing prompts”, but **productizing the prompt** (measurable + sustainable).
 
 ---
 
 ## 🏗️ System Architecture
 - **Event-driven**: RabbitMQ, idempotency, retry policy, dead-letter queue
 - **Caching**: Redis (cache-aside / write-through), TTL stratejileri, rate limiting
-- **API tasarımı**: versioning, backward compatibility, contract-first düşünce
+- **API**: versioning, backward compatibility, contract-first thinking
 - **Observability**: log/metric/trace, latency budget, backpressure
-- **Üretim disiplini**: config/secrets, environment ayrımı (dev/stage/prod), CI/CD
+- **Production discipline**: config/secrets, environment separation (dev/stage/prod), CI/CD
 
-> “Nerede patlar?” sorusunu sormayan mimari, mimari değildir.
+> Architecture that doesn't ask "Where will it explode?" isn't architecture at all.
 
 ---
 
@@ -56,8 +56,8 @@
 | Project | What it is | Stack | Architecture focus | Status |
 |---|---|---|---|---|
 | **LLM Workspace (RAG + Tools)** | Not/knowledge → RAG → tool-based action | Next.js, React, Tailwind, shadcn/ui | prompt contracts, eval, guardrails | WIP |
-| **Async Job Pipeline** | Queue tabanlı worker sistemi | RabbitMQ, Redis | idempotency, retry/backoff, DLQ | WIP |
-| **Local-first Desktop App** | Hafif, hızlı cross-platform desktop | Tauri, Rust (+ Swift edge) | IPC, storage, updater, security baseline | WIP |
+| **Async Job Pipeline** | Queue-based worker system | RabbitMQ, Redis | idempotency, retry/backoff, DLQ | WIP |
+| **Local-first Desktop App** | Light, fast cross-platform desktop | Tauri, Rust (+ Swift edge) | IPC, storage, updater, security baseline | WIP |
 
 ---
 
@@ -131,6 +131,6 @@
 ---
 
 ## 🚀 What I’m building / exploring
-- **LLM destekli üretkenlik**: not/knowledge → RAG → action (tool-based)
-- **Event-driven backend**: job queue + cache + API (retry/idempotency/DLQ mantığıyla)
-- **Local-first cross-platform**: Tauri ile hızlı, küçük, native hissi veren app’ler
+- **LLM-supported productivity**: not/knowledge → RAG → action (tool-based)
+- **Event-driven backend**: job queue + cache + API (retry/idempotency/Using the DLQ logic)
+- **Local-first cross-platform**: Tauri allows you to create fast, small, native-feeling apps.
